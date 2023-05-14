@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "to-do",
-    "slug": "to-do",
+    "name": "Tarifka",
+    "slug": "Tarifka",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -21,16 +21,10 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      },
-      "package": "com.edizkeskin.todo"
+      }
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    },
-    "extra": {
-      "eas": {
-        "projectId": "1cbb4f5f-2478-4065-a769-9dba67999f9b"
-      }
     }
   }
 }

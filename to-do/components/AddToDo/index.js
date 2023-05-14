@@ -15,7 +15,6 @@ const AddToDo = ({ todos, setTodos }) => {
     updatedTodos.push({ title: text, isDone: false, id: Date.now() });
     setTodos(updatedTodos);
     setText("");
-    console.log(updatedTodos);
   };
   const disabled = text === "" ? true : false;
 
