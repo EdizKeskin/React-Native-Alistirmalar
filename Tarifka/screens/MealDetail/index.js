@@ -17,7 +17,10 @@ const MealDetail = ({ route }) => {
   const { data, loading, error } = useFetch(url);
 
   if (loading) {
-    return <ActivityIndicator size="large" color="#0000ff" />;
+    return <ActivityIndicator size="large" />;
+  }
+  if (error) {
+    return <Text>{error}</Text>;
   }
 
   const item = data?.meals[0];

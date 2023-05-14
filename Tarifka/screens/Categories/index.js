@@ -1,4 +1,4 @@
-import { FlatList, StyleSheet, View } from "react-native";
+import { ActivityIndicator, FlatList, StyleSheet, View } from "react-native";
 import React from "react";
 import useFetch from "../../hooks/useFetch";
 import CategoryCard from "../../components/CategoryCard";
@@ -11,6 +11,12 @@ const Categories = ({ navigation }) => {
   const navigateMealList = (category) => {
     navigation.navigate("MealList", { category });
   };
+  if (loading) {
+    return <ActivityIndicator size="large" />;
+  }
+  if (error) {
+    return <Text>{error}</Text>;
+  }
 
   const renderCategory = ({ item }) => (
     <CategoryCard
